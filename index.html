@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px auto;
+            max-width: 1000px;
+            padding: 0 20px;
+        }
+
+        .block {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 25px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .block .img-container {
+            height: 200px; /* Increased height */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .block img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .block h2 {
+            color: #007bff;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .block p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .block p span {
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            font-size: 1.2em;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .block img {
+                max-width: 80%; /* Adjust image size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+</header>
+
+<div class="container">
+
+    <!-- Personal Information -->
+    <div class="block">
+        <div class="img-container">
+            <img src="assets/gemmi.jpg" alt="My Picture">
+        </div>
+        <h2>About Me</h2>
+        <p><span>Name:</span> Gemima V A</p>
+        <p><span>Address:</span> Puthiya Purayil House, Chooliyad, Kannur</p>
+        <p><span>Mobile Number:</span> 6235874398</p>
+        <p><span>Email:</span> gemimava7@gmail.com</p>
+    </div>
+
+    <!-- Education -->
+    <div class="block">
+        <h2>Education</h2>
+        <p><span>College:</span> College Of Engineering Vadakara</p>
+        <p><span>Major:</span> Computer Science</p>
+        <p><span>Batch:</span> 2021-2025</p>
+    </div>
+
+    <!-- Image with Description -->
+    <div class="block">
+        <div class="img-container">
+            <img src="assets/django.jpeg" alt="My Pet">
+        </div>
+        <h2>Jango</h2>
+        <p>Jango is my adorable cat who makes my life so much happier. I love him so much because he’s always there to make me smile with his playful ways and gentle purrs. He’s more than just a pet to me—he’s my special friend who brings joy and comfort every day.</p>
+    </div>
+
+    <!-- Personal History -->
+    <div class="block">
+        <h2>Getting to Know Me</h2>
+        <p>I'm an engineering student passionate about technology and learning. I prefer simplicity in both code and communication. I value meaningful connections in everything I do. I embrace each day as an opportunity to grow and make a difference. I keep pushing the boundaries of my potential and let curiosity and determination lead me to new heights. <a href="https://www.linkedin.com/in/gemima-v-a-418349258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Connect with me on LinkedIn</a>.</p>
+        <p>During my college years, I deepened my understanding of computer science, working on several projects that challenged and expanded my skills. <a href="https://github.com/GemimaVA">Check out my GitHub</a>.</p>
+    </div>
+
+    <!-- Skill Set -->
+    <div class="block">
+        <h2>Skill Set</h2>
+        <ol>
+            <li>Programming Languages: Python, Java, C</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Database Management: MySQL</li>
+        </ol>
+    </div>
+
+    <!-- Strengths & Weaknesses -->
+    <div class="block">
+        <h2>Strengths & Weaknesses</h2>
+        <ul>
+            <li>Strengths: Problem-solving, Adaptability, Collaboration, Public Speaking</li>
+            <li>Weaknesses: Procrastination, Clumsiness</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
